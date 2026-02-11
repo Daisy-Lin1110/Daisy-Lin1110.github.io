@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft JhengHei", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 10%;
+    background-color: #0071c2;
+    color: white;
+}
+.logo a{
+   color:white;
+   text-decoration: none;
+   font-size: 24px;
+   font-weight: bold;
+   letter-spacing:1px;
+   cursor: pointer;
+}
+.logo a:hover {
+   color: #00a1ff;
+
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+   color: white;
+   text-decoration: none;
+   font-size: 16px;
+   transition: 0.3s;
+}
+
+.nav-links a:hover {
+   color: #00a1ff;
+}
+
+.background{
+   background-color:white;
+}
+
+    
+.trip-item{
+   display: flex; /* 讓圖片跟文字左右排 */
+   gap: 40px;
+   margin-bottom:2px;
+   align-items: center;
+   padding: 0 10%;
+   background-color:#acdbf7;
+}
+
+.trip-photo img{
+   width:400px;
+   height:300px;
+   /* 關鍵字：這行會確保圖片不被壓扁或拉長 */
+   object-fit:cover; 
+   /* 可選：確保圖片裁切時是以中心點對齊 */
+   
+   margin-top:20px;
+   margin-bottom:20px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+.date h2{
+   width:200px;
+   color: #003580;
+   margin-bottom: 15px;
+}
+
+.custom-btn {
+   display:flex;
+   justify-content:flex-end;
+   display: inline-flex;     /* 讓按鈕寬度隨文字縮放 */
+   justify-content: center;
+   align-items: center;
+   padding: 12px 35px;
+   border-radius: 50px; 
+   background-color: #0071c2; 
+   color: #ffffff;
+   text-decoration: none; 
+   border: none;
+   font-size: 18px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   transition: 0.3s;
+   margin-left:150px;
+}
+.custom-btn:hover {
+   background:#005999;
+}
+
